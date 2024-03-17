@@ -1,0 +1,11 @@
+<div>
+    <h2>User Register Chart</h2>
+    <div>
+        <select (change)="onYearChange($event)">Select the year
+            <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+        </select>
+    </div>
+    <div class="col-lg-6">
+        <canvas id="user-register-barchart"></canvas>
+    </div>
+</div>
